@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int* bubbleSort(int input[], int size){
+void bubbleSort(int input[], int size){
   
   for(int i=0; i<size; i++){
     bool swap = false;
@@ -18,9 +18,8 @@ int* bubbleSort(int input[], int size){
     }
     // Break the loop if array is sorted.
     if(!swap) break;
-    printf("\nOuter loop run");
   }
-  return input;
+  
 }
 void displayList(int input[], int size){
   for(int i=0; i<size; i++){
@@ -30,7 +29,7 @@ void displayList(int input[], int size){
 
 int main()
 {
-    int list[] = {7, 3, 9, 12, 11};
+    int list[] = {35, 12, 7, 90, 22, 3, 102, 34, 55};
     int size = sizeof(list)/ sizeof(list[0]);
     printf("Unsorted array: ");
     displayList(list, size);
