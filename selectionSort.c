@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int* selectionSort(int input[], int size){
+void selectionSort(int input[], int size){
   
   for(int i=0; i<size; i++){
     int min_index = i;
@@ -15,7 +15,7 @@ int* selectionSort(int input[], int size){
    input[min_index] = input[i];
    input[i] = temp;
   }
-  return input;
+
 }
 
 void displayList(int input[], int size){
